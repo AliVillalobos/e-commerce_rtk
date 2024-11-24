@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { removeItemFromCart, clearCart, increaseItemQuantity, decreaseItemQuantity } from './CartSlice'; // Suponiendo que tienes creadores de acciones para aumentar y disminuir la cantidad de artículos
 import './ShoppingCart.css'; // Importar archivo CSS para estilos específicos del componente
 
+
 const ShoppingCart = () => {
   const dispatch = useDispatch();
   const cartItems = useSelector(state => state.cart.cartItems);
